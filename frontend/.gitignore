@@ -1,0 +1,61 @@
+# Node.js / Next.js Dependencies
+/node_modules/
+**/node_modules/          # Ignores node_modules in all subfolders, like frontend/, backend/
+
+/frontend/node_modules/
+# or if your frontend is inside a named folder like app or client
+# /client/node_modules/
+
+/backend/node_modules/
+
+# Yarn / PnP
+.pnp.*
+/.pnp/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing output
+/coverage
+**/coverage/
+
+# Next.js build output
+/.next/
+**/.next/
+**/out/
+
+# General build output
+/build/
+**/build/
+
+# Environment variables
+.env
+.env.*  # ignore all env-related files
+**/.env
+**/.env.*
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# macOS metadata
+.DS_Store
+
+# PEM files (private keys)
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+**/*.tsbuildinfo
+next-env.d.ts
+
+# Vercel deployment files
+.vercel
+**/.vercel
+
+# Optional: VS Code settings
+.vscode/
